@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
-    "start": "ts-node src/index.ts",
-    "debug": "export DEBUG=* && npm run start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:local": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "postinstall": "tsc"
   },
   "author": "",
   "license": "ISC",

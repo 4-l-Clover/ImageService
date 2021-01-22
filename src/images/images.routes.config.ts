@@ -5,7 +5,7 @@ import path from 'path';
 import os from 'os';
 import fs from 'fs';
 import axios from 'axios';
-import adjustFontSize from '../utils';
+import { adjustFontSize } from '../utils';
 
 const cl = cloudinary.v2;
 cl.config({
@@ -37,7 +37,7 @@ export class ImagesRoutes extends CommonRoutesConfig {
             {
               overlay: {
                 font_family: 'Recoleta-Medium.otf',
-                font_size: fontSize,
+                font_size: fontSize + 2,
                 font_weight: 'bold',
                 text: text,
                 text_align: 'center'
